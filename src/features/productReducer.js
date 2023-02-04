@@ -8,7 +8,7 @@ let { productRequests } = products[0];
 let suggestion = productRequests.filter((product) => {
   return product.status === 'suggestion';
 });
-console.log(suggestion);
+//console.log(suggestion);
 //console.log(productRequests)
 
 let initialState = {
