@@ -7,6 +7,7 @@ const Sidebar = () => {
   <Wrapper>
     <div>
       <h4>Frontend Mentor</h4>
+      <span>Feedback Board</span>
     </div>
     <div>
     </div>
