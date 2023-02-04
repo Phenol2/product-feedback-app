@@ -11,6 +11,7 @@ body{
   display: grid;
   place-items: center;
   font-family: 'Roboto', sans-serif;
+  background-color: #f6f5f7;
 }
 
 /* @media (prefers-color-scheme: light) {
