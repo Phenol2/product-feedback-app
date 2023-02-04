@@ -55,13 +55,24 @@ margin-block: 30px;
   & > div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
 
     & > span:nth-child(1){
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.6);
-    }
+      background-color: purple;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
 
     & > span:nth-child(2){
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.6);
+      flex: 1;
+    }
+
+    & > span:nth-child(3){
         font-weight: bold;
     }
   }

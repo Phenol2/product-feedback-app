@@ -22,15 +22,27 @@ const Sidebar = () => {
         menus.map((menu, ind) => <Cards key = {ind} menu = { menu} />)
       }
     </Menus>
-    <Roadmap>
-      <div>
+    <Roadmap >
+      <div >
         <h5>Roadmap</h5>
         <a href = "#">view</a>
       </div>
       <div>
-        <div>  <span>Planned</span> <span>{planned.length}</span></div>
-        <div>  <span>In-progress</span> <span>{inProgress.length}</span></div>
-        <div>  <span>Live</span> <span>{live.length}</span></div>
+        <div planned = "planned"> 
+          <span></span> 
+          <span>Planned</span> 
+          <span>{planned.length}</span>
+          </div>
+        <div inprogress = "inprogress">  
+          <span></span> 
+          <span>In-progress</span> 
+          <span>{inProgress.length}</span>
+          </div>
+        <div live = "live"> 
+           <span></span> 
+           <span>Live</span> 
+           <span>{live.length}</span>
+           </div>
       </div>
     </Roadmap>
   </Wrapper>);
