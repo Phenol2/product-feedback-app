@@ -35,6 +35,7 @@ background-color: #fff;
 width: 100%; 
 padding: 20px 25px;
 display: flex;
+flex-direction: column;
 gap: 20px;
 border-radius: 10px;
 margin-block: 30px;
@@ -43,5 +44,26 @@ margin-block: 30px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+& > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+
+  & > div{
+    display: flex;
+    justify-content: space-between;
+
+    & > span:nth-child(1){
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    & > span:nth-child(2){
+        font-weight: bold;
+    }
+  }
 }
 `

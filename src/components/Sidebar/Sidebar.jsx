@@ -2,8 +2,14 @@ import React from 'react';
 import { Wrapper, Board, Menus, Roadmap } from "./Sidebar.styled"
 import Cards from "../Layouts/Cards/Cards"
 
+import { useSelector } from "react-redux"
+
+
 const Sidebar = () => {
   let menus = ["All", "UI", "UX", "Enhancement", "Bug", "Features"]
+  let roadmaps = ["planned", "in-progress", "live"]
+  let { planned, inProgress, live } = useSelector(store => store.roadmap)
+
 
   return( 
   <Wrapper>
@@ -20,6 +26,11 @@ const Sidebar = () => {
       <div>
         <h5>Roadmap</h5>
         <a href = "#">view</a>
+      </div>
+      <div>
+        <div>  <span>Planned</span> <span>{planned.length}</span></div>
+        <div>  <span>In-progress</span> <span>{inProgress.length}</span></div>
+        <div>  <span>Live</span> <span>{live.length}</span></div>
       </div>
     </Roadmap>
   </Wrapper>);
