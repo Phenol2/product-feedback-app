@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Board, Menus } from "./Sidebar.styled"
+import { Wrapper, Board, Menus, Roadmap } from "./Sidebar.styled"
 import Cards from "../Layouts/Cards/Cards"
 
 const Sidebar = () => {
@@ -16,8 +16,12 @@ const Sidebar = () => {
         menus.map((menu, ind) => <Cards key = {ind} menu = { menu} />)
       }
     </Menus>
-    <div>
-    </div>
+    <Roadmap>
+      <div>
+        <h5>Roadmap</h5>
+        <a href = "#">view</a>
+      </div>
+    </Roadmap>
   </Wrapper>);
 };
 

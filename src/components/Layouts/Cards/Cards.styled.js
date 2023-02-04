@@ -1,7 +1,12 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-    bacground-color: blue;
-    padding: 5px 8px;
-    color: purple:
+    background-color: #eeebfa;
+    padding: 7px 18px;
+    color:  #5220e8;
+    font-size: 12px;
+    margin: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+
 `
