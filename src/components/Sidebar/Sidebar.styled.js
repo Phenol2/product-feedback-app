@@ -2,6 +2,11 @@ import styled from "styled-components"
 
 export const Wrapper = styled.section`
     flex: 1; 
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      gap: 10px;
+  }
 `
 
 export const Board = styled.div`
@@ -18,6 +23,10 @@ border-radius: 10px;
    font-size: 14px;
    margin-block: 6px;
  }
+
+ @media only screen and (max-width: 768px) {
+  width: 30%;
+}
 `
 
 export const Menus = styled.div`

@@ -5,6 +5,7 @@ import Product from "../Product/Product"
 
 const Suggestion = () => {
     let { products, } = useSelector(store => store.product)
+    
   return( 
   <Wrapper>
     {
