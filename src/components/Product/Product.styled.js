@@ -4,7 +4,7 @@ export const Container = styled.section`
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     background-color: white;
     padding: 30px 15px;
     margin-bottom: 20px;
@@ -33,9 +33,19 @@ export const Details = styled.div`
 
     & > p{
         font-size: 11px;
-        padding-block: 6px;
-        color: rgba(0, 0, 0, 0.6);
-        font-weight: light;
+        padding-block: 10px;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    }
+
+    & > span{
+        text-transform: capitalize;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: #eeebfa;
+        border-radius: 8px;
+        padding: 6px 10px;
+        color: #5b6ff0;
     }
 `
 
@@ -43,6 +53,10 @@ export const Comments = styled.div`
     font-size: 12px;
     display: flex;
     align-items: center;
-    font-weigth: bold;
+    font-weight: bold;
     gap: 3px;
+
+    & > svg{
+        color: #bdc6fc;
+    }
 `

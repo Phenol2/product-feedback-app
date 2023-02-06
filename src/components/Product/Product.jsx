@@ -4,7 +4,7 @@ import { Container, Upvotes,Details, Comments} from "./Product.styled"
 import {FaCaretUp} from "react-icons/fa"
 import {AiTwotoneMessage} from "react-icons/ai"
 
-const Product = ({ upvotes, comments, title, description }) => {
+const Product = ({ upvotes, comments, title, description, category }) => {
   let commentLength = (comments?.length) ? (comments?.length) : 0
   
   
@@ -17,6 +17,7 @@ const Product = ({ upvotes, comments, title, description }) => {
       <Details>
         <h5>{title}</h5>
         <p>{ description}</p>
+        <span>{ category}</span>
       </Details>
       <Comments>
         <AiTwotoneMessage />
