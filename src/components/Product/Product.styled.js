@@ -40,5 +40,9 @@ export const Details = styled.div`
 `
 
 export const Comments = styled.div`
-
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weigth: bold;
+    gap: 3px;
 `
