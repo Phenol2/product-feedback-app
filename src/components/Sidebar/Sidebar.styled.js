@@ -2,10 +2,12 @@ import styled from "styled-components"
 
 export const Wrapper = styled.section`
     flex: 1; 
+    display: flex;
+    flex-direction: column;
 
     @media only screen and (max-width: 768px) {
-      display: flex;
-      gap: 10px;
+      flex-direction: row;
+      gap: 20px;
   }
 `
 
@@ -26,6 +28,8 @@ border-radius: 10px;
 
  @media only screen and (max-width: 768px) {
   width: 30%;
+  padding: 120px 10px 10px 10px;
+  height: 200px;
 }
 `
 
@@ -37,6 +41,12 @@ display: flex;
 flex-wrap: wrap;
 border-radius: 10px;
 margin-block: 30px;
+
+@media only screen and (max-width: 768px) {
+  width: 30%;
+  height: 200px;
+  display: flex;
+}
 `
 
 export const Roadmap = styled.div`
@@ -85,5 +95,12 @@ margin-block: 30px;
         font-weight: bold;
     }
   }
+}
+
+@media only screen and (max-width: 768px) {
+  width: 30%;
+  padding:  20px;
+  height: 200px;
+  justify-content: center;
 }
 `

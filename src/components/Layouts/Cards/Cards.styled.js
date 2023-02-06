@@ -8,5 +8,12 @@ export const Wrapper = styled.div`
     margin: 8px;
     border-radius: 10px;
     font-weight: bold;
+    display: grid;
+    place-items: center;
 
+
+    @media only screen and (max-width: 768px) {
+        font-size: 10px;
+        padding: 0px 12px;
+      }
 `
