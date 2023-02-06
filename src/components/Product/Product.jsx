@@ -3,7 +3,7 @@ import { Container, Upvotes,Details, Comments} from "./Product.styled"
 
 import {FaCaretUp} from "react-icons/fa"
 
-const Product = ({ upvotes, comments, title }) => {
+const Product = ({ upvotes, comments, title, description }) => {
   let commentLength = (comments?.length) ? (comments?.length) : 0
   
   
@@ -13,7 +13,10 @@ const Product = ({ upvotes, comments, title }) => {
       <FaCaretUp />
         {upvotes}
       </Upvotes>
-      <Details>{ title}</Details>
+      <Details>
+        <h5>{title}</h5>
+        <p>{ description}</p>
+      </Details>
       <Comments>
         { commentLength }
       </Comments>

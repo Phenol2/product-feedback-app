@@ -29,6 +29,14 @@ export const Upvotes = styled.div`
 
 export const Details = styled.div`
     flex: 1;
+
+
+    & > p{
+        font-size: 11px;
+        padding-block: 6px;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: light;
+    }
 `
 
 export const Comments = styled.div`
