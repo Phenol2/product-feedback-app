@@ -31,6 +31,10 @@ export const Details = styled.div`
     flex: 1;
 
 
+    & > h5{
+        color: #01063d;
+    }
+
     & > p{
         font-size: 11px;
         padding-block: 10px;
