@@ -34,6 +34,12 @@ export const Wrapper = styled.section`
       gap: 20px;
       width: 80vw;
   }
+
+  @media ${device.mobileL} {
+    & > div:nth-child(2){
+      display: none;
+    }
+  }
 `
 
 export const Board = styled.div`
@@ -48,6 +54,7 @@ border-radius: 10px;
 
 & > svg{
   font-size: 25px;
+  display: none;
 }
 
 
@@ -107,6 +114,12 @@ border-radius: 10px;
   padding: 15px ;
   height: 80px;
 
+  & > svg{
+    font-size: 25px;
+    display: flex;
+  }
+  
+
   & > span{
     font-size: 8px;
   }
@@ -132,9 +145,7 @@ margin-block: 30px;
   display: flex;
 }
 
-@media ${device.mobileL} {
-  display: none;
-}
+
 `
 
 export const Roadmap = styled.div`
@@ -192,7 +203,4 @@ margin-block: 30px;
   justify-content: center;
 }
 
-@media ${device.mobileL} {
-  display: none;
-}
 `

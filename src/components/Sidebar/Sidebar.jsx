@@ -20,6 +20,8 @@ const Sidebar = () => {
         </div>
         <GiHamburgerMenu />
       </Board>
+
+      <div>
       <Menus>
         {menus.map((menu, ind) => (
           <Cards key={ind} menu={menu} />
@@ -48,6 +50,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Roadmap>
+      </div>
     </Wrapper>
   );
 };
