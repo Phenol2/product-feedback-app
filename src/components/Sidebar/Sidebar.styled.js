@@ -42,8 +42,13 @@ width: 100%;
 color: white;
 padding: 70px 20px 15px 20px;
 display: flex;
-flex-direction: column;
+justify-content: space-between;
+align-items: center;
 border-radius: 10px;
+
+& > svg{
+  font-size: 25px;
+}
 
 
  & > span{
@@ -121,10 +126,14 @@ flex-wrap: wrap;
 border-radius: 10px;
 margin-block: 30px;
 
-@media only screen and (max-width: 768px) {
+@media ${device.tablet} {
   width: 30%;
   height: 200px;
   display: flex;
+}
+
+@media ${device.mobileL} {
+  display: none;
 }
 `
 
@@ -181,5 +190,9 @@ margin-block: 30px;
   padding:  20px;
   height: 200px;
   justify-content: center;
+}
+
+@media ${device.mobileL} {
+  display: none;
 }
 `
