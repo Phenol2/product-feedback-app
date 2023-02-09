@@ -1,13 +1,38 @@
 import styled from "styled-components"
 
+
+const size = {
+  mobileS: '320px',
+  mobileM: '375px',
+  mobileL: '425px',
+  tablet: '768px',
+  laptop: '1024px',
+  laptopL: '1440px',
+  desktop: '2560px'
+}
+
+export const device = {
+  mobileS: `(max-width: ${size.mobileS})`,
+  mobileM: `(max-width: ${size.mobileM})`,
+  mobileL: `(max-width: ${size.mobileL})`,
+  tablet: `(max-width: ${size.tablet})`,
+  laptop: `(max-width: ${size.laptop})`,
+  laptopL: `(max-width: ${size.laptopL})`,
+  desktop: `(max-width: ${size.desktop})`,
+  desktopL: `(max-width: ${size.desktop})`
+};
+
 export const Wrapper = styled.section`
     flex: 1; 
     display: flex;
     flex-direction: column;
+    position: relative;
 
-    @media only screen and (max-width: 768px) {
+
+    @media ${device.tablet} {
       flex-direction: row;
       gap: 20px;
+      width: 80vw;
   }
 `
 
@@ -26,10 +51,64 @@ border-radius: 10px;
    margin-block: 6px;
  }
 
- @media only screen and (max-width: 768px) {
+ @media ${device.tablet} {
   width: 30%;
   padding: 120px 10px 10px 10px;
   height: 200px;
+}
+
+@media ${device.mobileS} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-radius: 0px;
+  padding: 15px ;
+  height: 80px;
+
+  & > span{
+    font-size: 8px;
+  }
+
+  & > h4{
+    font-size: 13px;
+  }
+}
+
+@media ${device.mobileM} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-radius: 0px;
+  padding: 15px ;
+  height: 80px;
+
+  & > span{
+    font-size: 8px;
+  }
+
+  & > h4{
+    font-size: 13px;
+  }
+}
+
+@media ${device.mobileL} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-radius: 0px;
+  padding: 15px ;
+  height: 80px;
+
+  & > span{
+    font-size: 8px;
+  }
+
+  & > h4{
+    font-size: 13px;
+  }
 }
 `
 

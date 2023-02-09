@@ -14,8 +14,10 @@ const Sidebar = () => {
   return( 
   <Wrapper>
     <Board>
+      <div>
       <h4>Frontend Mentor</h4>
       <span>Feedback Board</span>
+      </div>
     </Board>
     <Menus>
       {
